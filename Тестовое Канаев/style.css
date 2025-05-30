@@ -1,0 +1,133 @@
+/* Общие стили */
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #2A2A2A;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888888;
+}
+
+/* Категории */
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.category-btn {
+  flex: 1;
+  padding: 12px;
+  background-color: #2A2A2A;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn.active {
+  background-color: #9B4DFF;
+  border-color: #9B4DFF;
+  color: #FFFFFF;
+}
+
+.category-btn:hover {
+  background-color: #6B2DBF;
+}
+
+/* Чекбокс на одной линии */
+.checkbox {
+  display: flex;
+  align-items: center; /* Центрируем по вертикали */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #9B4DFF; /* Фиолетовый цвет как на сайте */
+  position: relative;
+  top: 4px; /* Чуть смещаем чекбокс вверх, чтобы выровнять с текстом */
+}
+
+
+/* Кнопки формы */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #9B4DFF;
+  color: #FFFFFF;
+}
+
+.submit-btn:hover {
+  background-color: #B566FF;
+}
+
+.reset-btn {
+  background-color: #444444;
+  color: #CCCCCC;
+}
+
+.reset-btn:hover {
+  background-color: #555555;
+}
